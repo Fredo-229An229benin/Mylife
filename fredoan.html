@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Bibliographie</title>
+  <style>
+    /* Styles généraux */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: blue;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      color: blue;
+    }
+    h3 {
+      color: black;
+    }
+    h1 {
+      font-size: 2.5rem;
+      animation: text-glow 0.5s infinite alternate;
+    }
+    @keyframes text-glow {
+      from {
+        text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px green;
+      }
+      to {
+        text-shadow: 0 0 20px green, 0 0 30px yellow, 0 0 40px yellow;
+      }
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Section principale */
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    /* Galerie d'images */
+    .gallery {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .gallery img {
+      width: 30%;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    /* Liens de téléchargement */
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+    section ul li {
+      margin-bottom: 10px;
+    }
+    section ul li a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    section ul li a:hover {
+      text-decoration: underline;
+    }
+    /* Pied de page */
+    footer {
+      background-color: blue;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    /* Style de l'étoile */
+    .star {
+      position: relative;
+      display: block;
+      width: 0;
+      height: 0;
+      margin: 25px;
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid gold;
+      border-left: 50px solid transparent;
+      transform: rotate(35deg);
+      animation: spinStar 1s infinite linear, changeColor 1s infinite alternate;
+    }
+    .star:before, .star:after {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: -50px;
+      width: 0;
+      height: 0;
+      border-right: 50px solid transparent;
+      border-bottom: 35px solid gold;
+      border-left: 50px solid transparent;
+    }
+    .star:before {
+      transform: rotate(-70deg);
+    }
+    .star:after {
+      transform: rotate(70deg);
+    }
+    /* Animation de rotation */
+    @keyframes spinStar {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    /* Animation de changement de couleur */
+    @keyframes changeColor {
+      0% {
+        border-bottom-color: gold;
+      }
+      50% {
+        border-bottom-color: orange;
+      }
+      100% {
+        border-bottom-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="animated-header">
+    <h1>Bienvenue sur ma page personnelle</h1>
+    <nav>
+      <ul>
+        <li><a href="#bibliographie">Bibliographie</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#documents">Documents</a></li>
+      </ul>
+    </nav>
+    <div class="star"></div>
+  </header>
+  <main>
+    <!-- Section Bibliographie -->
+    <section id="bibliographie">
+      <h2>À propos de moi</h2>
+      <p>
+        Bonjour, je m'appelle <span style="color: blue;">Frédy Amoussou ANAHAHOUNDE</span> ; mais le plus connu est <span style="color: blue;">Frédo An</span>. 
+        Je suis né le 4 décembre 2003 dans un village nommé Agnito Tchikomè, mais à l’hôpital, en même temps 
+        que ma sœur. Je suis jumeau, mais j’ai malheureusement perdu ma sœur jumelle dès l’enfance.
+        Dans ma vie, j’ai traversé de nombreuses épreuves. J’ai obtenu mon CEP dans ce même village, avant de poursuivre
+         mes études. Après l’obtention de mon <span style="color: blue;">BEPC</span> avec <span style="color: blue;">16,89</span>, j’ai dû quitter ma famille pour m’installer dans la ville de <span style="color: blue;">Lokossa</span>, 
+         car mon village ne disposait pas d’un établissement offrant la série scientifique C que je souhaitais suivre.
+         Ces trois années passées à <span style="color: blue;">Lokossa</span>, loin de mes parents, ont été riches en enseignements, tant sur la vie que 
+         dans la vie. Par la grâce de notre Seigneur Jésus-Christ, j’ai obtenu mon <span style="color: blue;">Baccalauréat C</span> avec la mention <span style="color: blue;">Bien</span>. 
+         Ce n’était pas exactement ce que j’espérais, mais je rends grâce à Dieu pour cette réussite. Ainsi, j’ai entamé une 
+         nouvelle étape de ma vie en devenant étudiant.
+        Je suis étudiant en classes préparatoires à l'<span style="color: blue;">INSPEI</span>, situé à <span style="color: blue;">Abomey</span> dans le département du <span style="color: blue;">Zou</span> au <span style="color: blue;">Bénin</span>. 
+        Je suis passionné par le développement web, la programmation, le design et les arts, ainsi que par de nombreux autres sujets. J'aime explorer de nouvelles
+        opportunités et travailler avec des grandes personnes. Mon rêve est de devenir un grand ingénieur dans mon domaine, compétent, 
+        par la grâce de notre Seigneur Jésus-Christ.
+        Je suis disponible pour vous rendre service.
+      </p>
+      <p>Pour plus de détails, contactez-moi à <a href="mailto:fredyanahahounde@gmail.com">fredyanahahounde@gmail.com</a>.</p>
+    </section>
+
+    <!-- Section Galerie -->
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="2.jpg" alt="Image 1">
+        <img src="3.jpg" alt="Image 2">
+        <img src="4.jpg" alt="Image 3">
+      </div>
+    </section>
+
+    <!-- Section Documents -->
+    <section id="documents">
+      <h2>Documents à Télécharger</h2>
+      <ul>
+        <li><a href="1.pdf" download>Document 1 - Mon CV</a></li>
+        <li><a href="2.pdf" download>Document 2 - Projet Web</a></li>
+        <li><a href="3.pdf" download>Document 3 - Présentation</a></li>
+      </ul>
+      <h2>Merci beaucoup pour avoir visité ma page</h2>     
+      <h3>------------------</h3>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Frédo An. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
